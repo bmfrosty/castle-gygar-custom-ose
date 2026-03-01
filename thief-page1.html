@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thief Class (OSE-Style)</title>
+<style>
+  /* Page background & base font */
+  body {
+    font-family: "Georgia", serif;
+    margin: 20px 30px;
+    background: #fbf8f2; /* parchment-light background */
+    color: #000;
+  }
+  /* Two-column layout */
+  .columns {
+    column-count: 2;
+    column-gap: 32px;
+  }
+  /* Headers styling */
+  h1, h2, h3 {
+    font-family: "Georgia", serif;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    break-inside: avoid;
+    color: #7A0000; /* OSE-style burgundy */
+  }
+  h1 {
+    font-size: 32px;
+    column-span: all;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: 0.6em;
+  }
+  p {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    text-align: justify;
+    font-size: 14px;
+  }
+  ul {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+  }
+  li {
+    margin-bottom: 0.3em;
+    font-size: 14px;
+  }
+  /* Navigation link */
+  .nav-link {
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+    column-span: all;
+  }
+  .nav-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7A0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .nav-link a:hover {
+    background: #5A0000;
+  }
+</style>
+</head>
+<body>
+
+<h1>Thief</h1>
+
+<div class="columns">
+
+<p>Thieves are adventurers who live by their skills of deception and stealth. They have a range of specialised adventuring skills unavailable to other characters. However, thieves are not always to be trusted.</p>
+
+<h2>Requirements</h2>
+<p>Human or Halfling.  Halfling requires a DEX of 9+.</p>
+
+<h2>Prime Requisite</h2>
+<p>DEX. Thieves with a Dexterity score of 13 or greater gain a +5% bonus to experience.</p>
+
+<h2>Hit Dice</h2>
+<p>1d4 per level until 9th level. After 9th level, +2 hit points per level, and Constitution modifiers no longer apply.</p>
+
+<h2>Maximum Level</h2>
+<p>14.</p>
+
+<h2>Adjust Ability Scores</h2>
+<p>During character creation, thieves may not lower STR.</p>
+
+<h2>Combat</h2>
+<p>Valuing stealth above all, thieves can only wear leather armour and cannot use shields. They can use any weapon.</p>
+
+<h2>Back-stab</h2>
+<p>When attacking an unaware opponent from behind, a thief receives a +4 bonus to hit and doubles any damage dealt.</p>
+
+<h2>Read Languages</h2>
+<p>A thief of 4th level or higher can read non-magical text in any language (including dead languages and basic codes) with 80% probability. If the roll fails, the thief may not try to read the same text again before gaining an experience level.</p>
+
+<h2>Scroll Use</h2>
+<p>A thief of 10th level or higher can cast arcane spells from scrolls. There is a 10% chance of error: an unusual or deleterious effect instead of the expected effect.</p>
+
+<h2>Thief Skills</h2>
+<p>Thieves can use the following skills, with the chance of success shown in the Thief Skills table:</p>
+
+<ul>
+<li><strong>Climb sheer surfaces (CS):</strong> A roll is required for each 100' to be climbed. If the roll fails, the thief falls at the halfway point, suffering falling damage.</li>
+<li><strong>Find or remove treasure traps (TR):</strong> A roll is required to find a treasure trap and then another to remove it. This may only be attempted once per trap.</li>
+<li><strong>Hear noise (HN):</strong> Requires the thief to be motionless—attacking or moving while hiding is not possible.</li>
+<li><strong>Hide in shadows (HS):</strong> Requires the thief to be motionless—attacking or moving while hiding is not possible.</li>
+<li><strong>Move silently (MS):</strong> A thief may attempt to sneak past enemies unnoticed.</li>
+<li><strong>Open locks (OL):</strong> Requires thieves' tools. A thief can only try this skill once per lock. If the roll fails, the thief may not try the same lock again before gaining an experience level.</li>
+<li><strong>Pick pockets (PP):</strong> If the victim is above 5th level, the thief's roll is penalised by 5% for every level above 5th. There is always at least a 1% chance of failure. A roll of more than twice the percentage required for success means that the attempted theft is noticed.</li>
+</ul>
+
+<h3>Rolling Skill Checks</h3>
+<p><strong>Hear noise:</strong> Is rolled on 1d6. If the roll is within the listed range of numbers, the skill succeeds.</p>
+<p><strong>Other Skills:</strong> All rolled on d%, with a result of less than or equal to the listed percentage indicating success.</p>
+
+<h3>Player Knowledge</h3>
+<p>The referee should roll for hear noise, hide in shadows and move silently on the player's behalf, as the thief does not immediately know if the attempt was successful. If a hide in shadows or move silently roll fails, the referee knows that the thief has been noticed and should determine enemies' actions appropriately.</p>
+
+<h2>After Reaching 9th Level</h2>
+<p>A thief may construct a secret hideout, attracting 2d6 apprentice thieves of 1st level. Apprentices are usually loyal to the character, but are not automatically replaced if killed. The character may use their apprentices as the beginnings of a Thieves' Guild.</p>
+
+</div> <!-- end two-column -->
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cleric Class - Tables (OSE-Style)</title>
+<style>
+  /* Page background & base font */
+  body {
+    font-family: "Georgia", serif;
+    margin: 20px 30px;
+    background: #fbf8f2; /* parchment-light background */
+    color: #000;
+  }
+  /* Headers styling */
+  h1, h2, h3 {
+    font-family: "Georgia", serif;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    break-inside: avoid;
+    color: #7A0000; /* OSE-style burgundy */
+  }
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: 0.6em;
+  }
+  p {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    text-align: justify;
+  }
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 12px;
+    break-inside: avoid;
+  }
+  table, th, td {
+    border: 1px solid #333;
+    padding: 2px 1px;
+    text-align: center;
+  }
+  th {
+    background: #dddddd;
+    font-weight: bold;
+    color: #000;
+  }
+  /* Wrapper for table at bottom */
+  .table-wrapper {
+    margin-top: 1em;
+  }
+  /* Navigation link */
+  .nav-link {
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+  }
+  .nav-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7A0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .nav-link a:hover {
+    background: #5A0000;
+  }
+</style>
+</head>
+<body>
+
+<h1>Cleric - Tables</h1>
+
+<div class="table-wrapper">
+
+<h2>Experience & Advancement</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Lvl</th>
+    <th rowspan="2">XP Needed</th>
+    <th rowspan="2">Hit Dice</th>
+    <th rowspan="2">To-Hit</th>
+    <th colspan="5">Saving Throws</th>
+    <th colspan="5">Spell Slots</th>
+  </tr>
+  <tr>
+    <th>Death</th><th>Wands</th><th>Paralysis</th><th>Breath</th><th>Spells</th>
+    <th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th>
+  </tr>
+  <tr><td>1</td><td>0</td><td>1d6</td><td>+0</td><td>11</td><td>12</td><td>14</td><td>16</td><td>15</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>2</td><td>1,500</td><td>2d6</td><td>+1</td><td>11</td><td>12</td><td>14</td><td>16</td><td>15</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>3</td><td>3,000</td><td>3d6</td><td>+1</td><td>11</td><td>12</td><td>14</td><td>16</td><td>15</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>4</td><td>6,000</td><td>4d6</td><td>+2</td><td>10</td><td>11</td><td>13</td><td>15</td><td>14</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>5</td><td>12,000</td><td>5d6</td><td>+2</td><td>9</td><td>10</td><td>12</td><td>14</td><td>13</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>6</td><td>25,000</td><td>6d6</td><td>+3</td><td>9</td><td>10</td><td>12</td><td>14</td><td>13</td><td>2</td><td>2</td><td>1</td><td>1</td><td>—</td></tr>
+  <tr><td>7</td><td>50,000</td><td>7d6</td><td>+3</td><td>8</td><td>9</td><td>11</td><td>13</td><td>12</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+  <tr><td>8</td><td>100,000</td><td>8d6</td><td>+4</td><td>7</td><td>8</td><td>10</td><td>12</td><td>11</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td></tr>
+  <tr><td>9</td><td>200,000</td><td>9d6</td><td>+5</td><td>6</td><td>7</td><td>9</td><td>11</td><td>10</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td></tr>
+  <tr><td>10</td><td>300,000</td><td>9d6+1*</td><td>+5</td><td>6</td><td>7</td><td>9</td><td>11</td><td>10</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td></tr>
+  <tr><td>11</td><td>400,000</td><td>9d6+2*</td><td>+6</td><td>5</td><td>6</td><td>8</td><td>10</td><td>9</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
+  <tr><td>12</td><td>500,000</td><td>9d6+3*</td><td>+6</td><td>4</td><td>5</td><td>7</td><td>9</td><td>8</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td></tr>
+  <tr><td>13</td><td>600,000</td><td>9d6+4*</td><td>+7</td><td>3</td><td>4</td><td>6</td><td>8</td><td>7</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td></tr>
+  <tr><td>14</td><td>700,000</td><td>9d6+5*</td><td>+7</td><td>3</td><td>4</td><td>6</td><td>8</td><td>7</td><td>6</td><td>5</td><td>5</td><td>5</td><td>4</td></tr>
+</table>
+
+<p style="font-size: 12px; margin-top: 0.5em;">* Modifiers from CON no longer apply. <strong>D:</strong> Death / poison; <strong>W:</strong> Wands; <strong>P:</strong> Paralysis / petrify; <strong>B:</strong> Breath attacks; <strong>S:</strong> Spells / rods / staves.</p>
+
+</div>
+
+<div class="table-wrapper">
+
+<h2>Turning the Undead</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Cleric<br>Level</th>
+    <th colspan="8">Hit Dice of Monster Type</th>
+  </tr>
+  <tr>
+    <th>1</th><th>2</th><th>2*</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7-9</th>
+  </tr>
+  <tr><td>1</td><td>7</td><td>9</td><td>11</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>2</td><td>T</td><td>7</td><td>9</td><td>11</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>3</td><td>T</td><td>T</td><td>7</td><td>9</td><td>11</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>4</td><td>D</td><td>T</td><td>T</td><td>7</td><td>9</td><td>11</td><td>—</td><td>—</td></tr>
+  <tr><td>5</td><td>D</td><td>D</td><td>T</td><td>T</td><td>7</td><td>9</td><td>11</td><td>—</td></tr>
+  <tr><td>6</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>7</td><td>9</td><td>11</td></tr>
+  <tr><td>7</td><td>D</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>7</td><td>9</td></tr>
+  <tr><td>8</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>7</td></tr>
+  <tr><td>9</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td></tr>
+  <tr><td>10</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>T</td></tr>
+  <tr><td>11+</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td></tr>
+</table>
+
+<h3>Turning Table Results</h3>
+<p><strong>—:</strong> The turning fails.</p>
+<p><strong>Number:</strong> If the 2d6 turning roll is higher or equal, the turning attempt succeeds.</p>
+<p><strong>T:</strong> The turning succeeds.</p>
+<p><strong>D:</strong> The turning succeeds; the monsters are destroyed, not simply caused to flee.</p>
+<p><strong>2*:</strong> 2 HD monsters with a special ability (i.e. with an asterisk next to their HD rating, in the monster description).</p>
+
+</div>
+
+</body>
+</html>
