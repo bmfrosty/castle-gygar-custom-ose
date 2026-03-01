@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fighter Class (OSE-Style)</title>
+<style>
+  /* Page background & base font */
+  body {
+    font-family: "Georgia", serif;
+    margin: 20px 30px;
+    background: #fbf8f2; /* parchment-light background */
+    color: #000;
+  }
+  /* Two-column layout */
+  .columns {
+    column-count: 2;
+    column-gap: 32px;
+  }
+  /* Headers styling */
+  h1, h2, h3 {
+    font-family: "Georgia", serif;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    break-inside: avoid;
+    color: #7A0000; /* OSE-style burgundy */
+  }
+  h1 {
+    font-size: 32px;
+    column-span: all;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: 0.6em;
+  }
+  p {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    text-align: justify;
+  }
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 13px;
+    column-span: all;
+    break-inside: avoid;
+  }
+  table, th, td {
+    border: 1px solid #333;
+    padding: 4px;
+    text-align: center;
+  }
+  th {
+    background: #dddddd;
+    font-weight: bold;
+    color: #000;
+  }
+  /* Wrapper for table at bottom */
+  .table-wrapper {
+    margin-top: 1.5em;
+    column-span: all;
+  }
+</style>
+</head>
+<body>
+
+<h1>Fighter</h1>
+
+<div class="columns">
+
+<p>Fighters are adventurers trained in warfare and combat. In a group of adventurers, the role of fighters is to battle monsters and to defend other characters.</p>
+
+<h2>Requirements</h2>
+<p>None.</p>
+
+<h2>Prime Requisite</h2>
+<p>STR. Fighters with a Strength score of 13 or greater gain a +5% bonus to experience.</p>
+
+<h2>Hit Dice</h2>
+<p>1d8 per level until 9th level. After 9th level, +2 hit points per level, and Constitution modifiers no longer apply.</p>
+
+<h2>Maximum Level</h2>
+<p>14.</p>
+
+<h2>Combat</h2>
+<p>Fighters can use all types of weapons and armour.</p>
+
+<h2>Stronghold</h2>
+<p>Any time a fighter wishes (and has sufficient money), they can build a castle or stronghold and control the surrounding lands.</p>
+
+<h2>After Reaching 9th Level</h2>
+<p>A fighter may be granted a title such as Baron or Baroness. The land under the fighter's control is then known as a Barony.</p>
+
+</div> <!-- end two-column -->
+
+<div class="table-wrapper">
+
+<h2>Fighter Level Progression</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Level</th>
+    <th rowspan="2">XP</th>
+    <th rowspan="2">HD</th>
+    <th rowspan="2">To-Hit</th>
+    <th colspan="5">Saving Throws</th>
+  </tr>
+  <tr>
+    <th>D</th><th>W</th><th>P</th><th>B</th><th>S</th>
+  </tr>
+  <tr><td>1</td><td>0</td><td>1d8</td><td>+1</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
+  <tr><td>2</td><td>2,000</td><td>2d8</td><td>+2</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
+  <tr><td>3</td><td>4,000</td><td>3d8</td><td>+3</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
+  <tr><td>4</td><td>8,000</td><td>4d8</td><td>+4</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+  <tr><td>5</td><td>16,000</td><td>5d8</td><td>+5</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+  <tr><td>6</td><td>32,000</td><td>6d8</td><td>+5</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+  <tr><td>7</td><td>64,000</td><td>7d8</td><td>+6</td><td>8</td><td>9</td><td>10</td><td>10</td><td>12</td></tr>
+  <tr><td>8</td><td>120,000</td><td>8d8</td><td>+6</td><td>8</td><td>9</td><td>10</td><td>10</td><td>12</td></tr>
+  <tr><td>9</td><td>240,000</td><td>9d8</td><td>+7</td><td>8</td><td>9</td><td>10</td><td>10</td><td>12</td></tr>
+  <tr><td>10</td><td>360,000</td><td>9d8+2*</td><td>+7</td><td>6</td><td>7</td><td>8</td><td>8</td><td>10</td></tr>
+  <tr><td>11</td><td>480,000</td><td>9d8+4*</td><td>+7</td><td>6</td><td>7</td><td>8</td><td>8</td><td>10</td></tr>
+  <tr><td>12</td><td>600,000</td><td>9d8+6*</td><td>+8</td><td>6</td><td>7</td><td>8</td><td>8</td><td>10</td></tr>
+  <tr><td>13</td><td>720,000</td><td>9d8+8*</td><td>+9</td><td>4</td><td>5</td><td>6</td><td>5</td><td>8</td></tr>
+  <tr><td>14</td><td>840,000</td><td>9d8+10*</td><td>+9</td><td>4</td><td>5</td><td>6</td><td>5</td><td>8</td></tr>
+</table>
+
+<p style="margin-top: 0.5em; font-size: 13px;">* Modifiers from CON no longer apply.</p>
+<p style="margin-top: 0.3em; font-size: 13px;"><strong>D:</strong> Death / poison; <strong>W:</strong> Wands; <strong>P:</strong> Paralysis / petrify; <strong>B:</strong> Breath attacks; <strong>S:</strong> Spells / rods / staves.</p>
+
+</div>
+
+</body>
+</html>
