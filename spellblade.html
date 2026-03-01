@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spellblade Class (OSE-Style)</title>
+<style>
+  /* Page background & base font */
+  body {
+    font-family: "Georgia", serif;
+    margin: 20px 30px;
+    background: #fbf8f2; /* parchment-light background */
+    color: #000;
+  }
+  /* Two-column layout */
+  .columns {
+    column-count: 2;
+    column-gap: 32px;
+  }
+  /* Headers styling */
+  h1, h2, h3 {
+    font-family: "Georgia", serif;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    break-inside: avoid;
+    color: #7A0000; /* OSE-style burgundy */
+  }
+  h1 {
+    font-size: 32px;
+    column-span: all;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: 0.6em;
+  }
+  p {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    text-align: justify;
+  }
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 13px;
+    column-span: all;
+    break-inside: avoid;
+  }
+  table, th, td {
+    border: 1px solid #333;
+    padding: 4px;
+    text-align: center;
+  }
+  th {
+    background: #dddddd;
+    font-weight: bold;
+    color: #000;
+  }
+  /* Wrapper for table at bottom */
+  .table-wrapper {
+    margin-top: 1.5em;
+    column-span: all;
+  }
+</style>
+</head>
+<body>
+
+<h1>Spellblade</h1>
+
+<div class="columns">
+
+<p>The spellblade is a warrior-scholar who combines martial training with arcane study. Both elves and humans can become spellblades. Unlike wizards, spellblades train with blades and armor while retaining the ability to prepare and cast spells. Their abilities come from discipline and training.</p>
+
+<h2>Requirements</h2>
+<p>Humans: INT 13+ and STR 13+. Elves: INT 13+ or STR 13+.</p>
+
+<h2>Prime Requisites</h2>
+<p>Strength and Intelligence. Spellblades with both scores 13+ gain a +5% experience bonus.</p>
+
+<h2>Hit Dice</h2>
+<p>1d6 per level until 9th level.</p>
+
+<h2>Maximum Level</h2>
+<p>10.</p>
+
+<h2>Combat</h2>
+<p>Spellblades may use all weapons and may wear any armor type, though heavy armor may interfere with spellcasting depending on the referee’s ruling.</p>
+
+<h3>To-Hit Bonus</h3>
+<p>Spellblades advance in attack capability from +1 at 1st level to +7 at 10th level.</p>
+
+<h2>Arcane Magic</h2>
+<p>Spellblades prepare and cast spells from spellbooks, using the magic-user list unless a custom list is provided by the referee. They must study their spellbook daily to prepare spells, and may cast only the number of spells indicated on the advancement table.</p>
+
+<h3>Scroll Use</h3>
+<p>Spellblades may use scrolls of spells they can cast.</p>
+
+<h3>Magical Research</h3>
+<p>At 9th level, a Spellblade may research spells, craft magic items, or perform other arcane experiments.</p>
+
+<h2>Strongholds</h2>
+<p>Upon reaching 9th level, a Spellblade may establish a stronghold. Followers, students, or warriors may come to train under them, depending on campaign circumstances.</p>
+
+</div> <!-- end two-column -->
+
+<div class="table-wrapper">
+
+<h2>Experience & Advancement</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Lvl</th>
+    <th rowspan="2">XP Needed</th>
+    <th rowspan="2">Hit Dice</th>
+    <th rowspan="2">To-Hit</th>
+    <th colspan="5">Saving Throws</th>
+    <th colspan="5">Spell Slots</th>
+  </tr>
+  <tr>
+    <th>Death</th><th>Wands</th><th>Paralysis</th><th>Breath</th><th>Spells</th>
+    <th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th>
+  </tr>
+  <tr><td>1</td><td>0</td><td>1d6</td><td>+1</td><td>12</td><td>13</td><td>13</td><td>15</td><td>15</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>2</td><td>4,000</td><td>2d6</td><td>+2</td><td>12</td><td>13</td><td>13</td><td>15</td><td>15</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>3</td><td>8,000</td><td>3d6</td><td>+3</td><td>11</td><td>12</td><td>12</td><td>14</td><td>14</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>4</td><td>16,000</td><td>4d6</td><td>+4</td><td>10</td><td>11</td><td>11</td><td>13</td><td>13</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>5</td><td>32,000</td><td>5d6</td><td>+5</td><td>10</td><td>11</td><td>11</td><td>13</td><td>13</td><td>2</td><td>2</td><td>1</td><td>—</td><td>—</td></tr>
+  <tr><td>6</td><td>64,000</td><td>6d6</td><td>+5</td><td>9</td><td>10</td><td>10</td><td>12</td><td>12</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td></tr>
+  <tr><td>7</td><td>120,000</td><td>7d6</td><td>+6</td><td>8</td><td>9</td><td>9</td><td>11</td><td>11</td><td>3</td><td>2</td><td>2</td><td>1</td><td>—</td></tr>
+  <tr><td>8</td><td>250,000</td><td>8d6</td><td>+6</td><td>8</td><td>9</td><td>9</td><td>11</td><td>11</td><td>3</td><td>3</td><td>2</td><td>2</td><td>—</td></tr>
+  <tr><td>9</td><td>400,000</td><td>9d6</td><td>+7</td><td>7</td><td>8</td><td>8</td><td>10</td><td>10</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+  <tr><td>10</td><td>600,000</td><td>9d6+2</td><td>+7</td><td>6</td><td>7</td><td>7</td><td>9</td><td>9</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+</table>
+
+</div>
+
+</body>
+</html>
